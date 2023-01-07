@@ -2,8 +2,10 @@
 Rename photos and screenshots to `YYMMDD_HHMMSS.ext`.
 
 ## Usage
-
-pip-installing will install two commands:
+```
+pip install git+ssh://github.com/Ormorod/rename
+```
+This will install two commands:
 - `rename_picture` will use the picture data to create the new name, 
 use this at the end of the year on camera roll. Acts on `.jpg`, `.jpeg`,
 `.png`, `.gif`, `.tiff`, and `.webp`.
