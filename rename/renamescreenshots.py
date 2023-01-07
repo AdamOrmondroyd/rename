@@ -10,9 +10,7 @@ def rename_screenshots(folder_path):
 
     for oldname in filelist:
         all_spaces = oldname.replace("-", " ").replace(".", " ")
-        print(all_spaces)
         x = all_spaces.split()
-        print(x)
         if x[0] == "Screenshot":
             newname = f"{x[1]}{x[2]}{x[3]}_{x[5]}{x[6]}{x[7]}.png"
             os.rename(oldname, newname) 
