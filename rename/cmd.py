@@ -1,6 +1,6 @@
 import os
-from rename.rename_photos import rename_photos
-from rename.rename_screenshots import rename_screenshots
+from rename.renamephotos import rename_photos
+from rename.renamescreenshots import rename_screenshots
 
 
 def cmd_rename_photos():
