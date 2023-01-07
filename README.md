@@ -8,4 +8,4 @@ pip-installing will install two commands:
 use this at the end of the year on camera roll. Acts on `.jpg`, `.jpeg`,
 `.png`, `.gif`, `.tiff`, and `.webp`.
 - `rename_screenshot` renames MacOS screenshots on the desktop, using their existing name.
-acts on all files beginning "Screenshot".
+Acts on all files beginning "Screenshot".
