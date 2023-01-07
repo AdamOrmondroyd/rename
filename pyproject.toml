@@ -8,6 +8,6 @@ readme = "README.md"
 [project.urls]
 repository = "https://github.com/Ormorod/rename_images"
 
-[tool.poetry.scripts]
-rename_photos = "scripts.cmd:cmd_rename_photos"
-rename_screenshots = "scripts.cmd:cmd_rename_screenshots"
+[project.scripts]
+rename_photos = "rename.cmd:cmd_rename_photos"
+rename_screenshots = "rename.cmd:cmd_rename_screenshots"
