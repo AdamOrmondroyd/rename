@@ -12,7 +12,6 @@ valid_extensions = [".jpg", ".jpeg", ".png"]
 valid_extensions += [".gif", ".tiff", ".webp"]
 
 
-
 def rename_photos(folder_path):
     # Get all files from folder
     file_names = os.listdir(folder_path)
@@ -25,7 +24,7 @@ def rename_photos(folder_path):
         file_ext = os.path.splitext(file_name)[1]
 
         # skip if the file does not have a valid file extension
-        if (file_ext not in valid_extensions):
+        if file_ext not in valid_extensions:
             print(f"invalid extension {file_ext}")
             continue
 
@@ -34,10 +33,23 @@ def rename_photos(folder_path):
 
         print(old_file_path)
         print(os.stat(old_file_path).st_mtime)
-        print(time.strftime('%Y%m%d_%H%M%S', time.localtime(os.stat(old_file_path).st_mtime)))
-        new_file_path = os.path.join(folder_path, str(time.strftime('%Y%m%d_%H%M%S', time.localtime(os.stat(old_file_path).st_mtime)))+file_ext)
+        print(
+            time.strftime(
+                "%Y%m%d_%H%M%S", time.localtime(os.stat(old_file_path).st_mtime)
+            )
+        )
+        new_file_path = os.path.join(
+            folder_path,
+            str(
+                time.strftime(
+                    "%Y%m%d_%H%M%S", time.localtime(os.stat(old_file_path).st_mtime)
+                )
+            )
+            + file_ext,
+        )
         print(new_file_path)
         os.rename(old_file_path, new_file_path)
+
 
 if __name__ == "__main__":
     # If folder path argument exists then use it else current running folder
