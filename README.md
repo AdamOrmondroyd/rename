@@ -1,2 +1,2 @@
 # Rename
-Rename photos and screenshots to `YYMMDD\_HHMMSS.ext` format.
+Rename photos and screenshots to `YYMMDD_HHMMSS.ext` format.
