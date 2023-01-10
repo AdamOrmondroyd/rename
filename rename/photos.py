@@ -10,6 +10,8 @@ import time
 # Set list of valid file extensions
 valid_extensions = [".jpg", ".jpeg", ".png"]
 valid_extensions += [".gif", ".tiff", ".webp"]
+valid_extensions += [".JPG", ".JPEG"]
+valid_extensions += [".mp4"]
 
 
 def rename_photos(folder_path):
