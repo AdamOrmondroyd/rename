@@ -9,5 +9,5 @@ This will install two commands:
 - `rename_picture` will use the picture data to create the new name, 
 use this at the end of the year on camera roll. Acts on `.jpg`, `.jpeg`,
 `.png`, `.gif`, `.tiff`, and `.webp`.
-- `rename_screenshot` renames macOS screenshots on the desktop, using their existing name.
+- `rename_screenshots` renames macOS screenshots on the desktop, using their existing name.
 Acts on all files beginning "Screenshot".
