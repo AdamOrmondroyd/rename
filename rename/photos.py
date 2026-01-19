@@ -12,6 +12,7 @@ valid_extensions = [".jpg", ".jpeg", ".png"]
 valid_extensions += [".gif", ".tiff", ".webp"]
 valid_extensions += [".JPG", ".JPEG"]
 valid_extensions += [".mp4"]
+valid_extensions += [".heic", ".HEIC", ".heif", ".HEIF"]
 
 
 def rename_photos(folder_path):
