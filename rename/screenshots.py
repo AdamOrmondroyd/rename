@@ -13,11 +13,11 @@ def rename_screenshots(folder_path):
         all_spaces = oldname.replace("-", " ").replace(".", " ")
         x = all_spaces.split()
         if x[0] == "Screenshot":
-            newname = f"{x[1]}{x[2]}{x[3]}_{x[5]}{x[6]}{x[7]}.png"
+            newname = f"Screenshot_{x[1]}{x[2]}{x[3]}_{x[5]}{x[6]}{x[7]}.png"
             os.rename(oldname, newname)
 
         if x[0] == "Screen" and x[1] == "Recording":
-            newname = f"{x[2]}{x[3]}{x[4]}_{x[6]}{x[7]}{x[8]}.mov"
+            newname = f"Screen_Recording_{x[2]}{x[3]}{x[4]}_{x[6]}{x[7]}{x[8]}.mov"
             os.rename(oldname, newname)
 
 
